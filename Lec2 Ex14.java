@@ -3,12 +3,12 @@
 public class TrueFalse 
 {
   public static void main(String[] args)
-    { 
-    boolean bool;
+    {
+    char letter;
     
-    bool = true;
-    System.out.println(bool);
-    bool = false;
-    System.out.println(bool);
+    letter = 'A';
+    System.out.println(letter);
+    letter = 'B';
+    System.out.println(letter);
     }
   }
