@@ -1,49 +1,39 @@
-import javax.swing.JOptionPane; // Needed for JOptionPane class
+import java.util.Scanner; // Needed for the Scanner class
 
  /**
-
-This program demonstrates a nested if statement.
+ This program demonstrates the if-else statement.
  */
 
- public class LoanQualifier
- {
-   public static void main(String[] args)
-     {
-     double salary; // Annual salary
-     double yearsOnJob; // Years at current job
-     String input; // To hold string input
+ public class Division
+  {
+  public static void main(String[] args)
+   {
+    double number1, number2; // Division operands
+    double quotient; // Result of division
 
-     // Get the user's annual salary.
-     input = JOptionPane.showInputDialog("Enter your " +
-     "annual salary.");
-     salary = Double.parseDouble(input);
+    // Create a Scanner object for keyboard input.
+    Scanner keyboard = new Scanner(System.in);
 
-     // Get the number of years at the current job.
-     input = JOptionPane.showInputDialog("Enter the number of " +
-     "years at your current job.");
-     yearsOnJob = Double.parseDouble(input);
+    // Get the first number.
+    System.out.print("Enter a number: ");
+    number1 = keyboard.nextDouble();
 
-     // Determine whether the user qualifies for the loan.
-     if (salary >= 30000)
-     {
-     if (yearsOnJob >= 2)
-     {
-     JOptionPane.showMessageDialog(null, "You qualify " +
-     "for the loan.");
-     }
-     else
-     {
-     JOptionPane.showMessageDialog(null, "You must have " +
-     "been on your current job for at least " +
-     "two years to qualify.");
-     }
-     }
-     else
-     {
-     JOptionPane.showMessageDialog(null, "You must earn " +
-     "at least $30,000 per year to qualify.");
-     }
+    // Get the second number.
+    System.out.print("Enter another number: ");
+    number2 = keyboard.nextDouble();
 
-     System.exit(0);
+    if (number2 == 0)
+     {
+     System.out.println("Division by zero is not possible.");
+     System.out.println("Please run the program again and ");
+     System.out.println("enter a number other than zero.");
+     }
+    else
+     {
+     quotient = number1 / number2;
+     System.out.print("The quotient of " + number1);
+     System.out.print(" divided by " + number2);
+     System.out.println(" is " + quotient);
+     }
    }
  }
