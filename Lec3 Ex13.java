@@ -32,5 +32,5 @@ import java.util.Scanner; // Needed for Scanner class
          default:
            System.out.println("That's not 1, 2, or 3!");
          }
- }
+    }
  }
