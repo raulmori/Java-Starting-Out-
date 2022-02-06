@@ -24,7 +24,7 @@ public class CreateCustomerTable
           // Make an SQL statement to create the table.
           String sql = "CREATE TABLE Customer" +
           "( CustomerNumber CHAR(10) NOT NULL PRIMARY KEY, " +
-          " Name CHAR(25)," +
+         
           " Address CHAR(25)," +
           " City CHAR(12)," +
           " State CHAR(2)," +
