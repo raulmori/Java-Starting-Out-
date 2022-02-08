@@ -8,7 +8,7 @@ import java.util.Scanner; // Needed for the Scanner class
  public class MathTutor 
    {
    public static void main(String[] args)
-       {
+         {
          int number1; // A number
          int number2; // Another number
          int sum; // The sum of the numbers
